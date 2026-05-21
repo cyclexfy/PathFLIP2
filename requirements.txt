@@ -1,0 +1,68 @@
+# Core deep learning stack
+# Install the PyTorch build that matches your CUDA/CPU environment if this
+# default wheel is not appropriate: https://pytorch.org/get-started/locally/
+torch==2.4.1
+torchvision==0.19.1
+
+# Training
+pytorch-lightning==2.4.0
+torchmetrics==1.7.1
+deepspeed==0.16.7
+accelerate==1.6.0
+
+# Hugging Face / LLM fine-tuning
+transformers==4.51.1
+peft==0.15.2
+sentencepiece==0.2.0
+safetensors==0.5.3
+tiktoken==0.9.0
+
+# Scientific computing and ML
+numpy==2.0.2
+pandas==2.2.3
+scipy==1.13.1
+scikit-learn==1.5.2
+h5py==3.14.0
+
+# Vision, WSI, and visualization
+opencv-python==4.11.0.86
+openslide-python==1.4.2
+Pillow==11.3.0
+matplotlib==3.9.4
+scikit-image==0.24.0
+tifffile==2024.8.30
+
+# Model utilities
+einops==0.8.1
+timm==0.9.12
+omegaconf==2.3.0
+ml-collections==0.1.1
+nystrom-attention==0.0.14
+iopath==0.1.10
+webdataset==0.2.100
+
+# Metrics and evaluation
+pycocoevalcap==1.2
+pycocotools==2.0.8
+rouge-score==0.1.2
+
+# Logging and experiment tracking
+tensorboard==2.20.0
+tensorboardX==2.6.2.2
+wandb==0.19.10
+tqdm==4.67.1
+
+# General utilities
+PyYAML==6.0.2
+requests==2.32.5
+regex==2024.11.6
+packaging==24.2
+filelock==3.12.4
+
+# Optional / environment-specific dependencies:
+# - flash-attn==2.8.3 can speed up attention but often requires a matching
+#   CUDA toolkit and compiler, so install it manually if your environment needs it.
+# - mmcv is only needed for src/model/attention.py. Install a build that matches
+#   your PyTorch/CUDA versions if you use that module.
+# - CONCH and Uni-Core were removed because the exported environment referenced
+#   local/private paths. Install them separately only if your workflow imports them.

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Runtime outputs
+outputs/
+results/
+eval_results/
+lightning_logs/
+runs/
+wandb/
+logs/
+temp/
+
+# Model weights and checkpoints
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Large local data artifacts
+datasets/processing/
+datasets/*.json
+datasets/*.h5
+datasets/*.svs
+datasets/*.tif
+datasets/*.tiff
+datasets/*.pt
+datasets/*.pth
+!datasets/README.md
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
