@@ -66,6 +66,7 @@ bash scripts/train_vlm_stage2.sh
 All scripts use environment variables for local paths so machine-specific paths do not need to be committed.
 
 ## Evaluation
+For a quick test, you can download our weights at [https://huggingface.co/jshhhh/PathFLIP](https://huggingface.co/jshhhh/PathFLIP). We will continue to maintain the project!
 
 Zero-shot classification:
 
