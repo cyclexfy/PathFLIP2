@@ -2,12 +2,16 @@
 
 PathFLIP is a pathology vision-language learning project for whole-slide image representation learning, image-text alignment, retrieval, classification, and VLM fine-tuning.
 
+## Framework
+![](./docs/fig_framework.png)
+PathFLIP framework overview for WSI representation learning, image-text alignment, retrieval, and downstream VLM tuning.
+
 ## Repository Layout
 
 ```text
 src/
   dataset/        Dataset and datamodule definitions
-  model/          PathFLIP, PathFLIP-VLM, LongNet/TorchScale modules, losses
+  model/          PathFLIP, PathFLIP-VLM, losses modules
   tools/          Training entry points and argument parsers
   eval/           Retrieval, classification, and VQA evaluation
 scripts/          Reproducible shell entry points
@@ -73,6 +77,10 @@ bash scripts/eval_zero_shot_cls.sh
 
 Few-shot and retrieval scripts are available in `scripts/` and can be configured with `ARGS_PATH`, `CKPT_PATH`, `DATASETS`, and related environment variables.
 
-## GitHub Hygiene
+## Results Display
 
-The repository is configured to ignore local caches, notebooks, checkpoints, WSI files, generated outputs, and large JSON datasets. Keep private paths, credentials, raw slides, and patient-sensitive data outside the repository.
+![](./docs/table2.png)
+WSI-level zero-shot classification comparison. PathFLIP shows consistent gains over representative baselines on benchmark settings.
+
+![](./docs/visual_grounding.png)
+Visual grounding examples. The model focuses on pathology-relevant regions aligned with text semantics.
