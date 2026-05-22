@@ -84,3 +84,18 @@ WSI-level zero-shot classification comparison. PathFLIP shows consistent gains o
 
 ![](./docs/visual_grounding.png)
 Visual grounding examples. The model focuses on pathology-relevant regions aligned with text semantics.
+
+
+## Citation
+If our work is useful for your project, please cite:
+```
+@inproceedings{liu2026pathflip,
+  title={Pathflip: Fine-grained language-image pretraining for versatile computational pathology},
+  author={Liu, Fengchun and Jiang, Songhan and Cai, Linghan and Wang, Ziyue and Zhang, Yongbing},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={9},
+  pages={7132--7140},
+  year={2026}
+}
+```
